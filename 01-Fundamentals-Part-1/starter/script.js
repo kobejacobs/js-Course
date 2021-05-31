@@ -33,7 +33,7 @@ console.log(typeof javascriptIsFun);
 javascriptIsFun = "KOBE IS SEXY";
 // Print out data type of changed variable
 console.log(typeof javascriptIsFun);
-*/
+
 
 // Let, const, var
 
@@ -49,3 +49,43 @@ const birthYear = 2001;
 // Var variables can be mutated
 var job = "programmer";
 job = "teacher";
+*/
+
+// Basic operators
+
+const currentYear = 2037;
+
+const ageKobe = currentYear - 2001;
+const ageFebe = currentYear - 2000;
+console.log(ageKobe, ageFebe);
+// ** means to the power of 
+console.log(ageKobe * 2, ageFebe / 10, 2 ** 3);
+
+// + operator can be used to concatenated strings
+const firstName = "Kobe";
+const lastName = "Jacobs";
+
+console.log(firstName + lastName);
+
+// Assignment opperators
+let x = 10 + 5;
+console.log(x);
+
+// x = x + 10
+x += 10;
+console.log(x);
+
+// x = x * 10 can also be done to devide
+x *= 4;
+console.log(x);
+
+// x++ adds 1 to the value and x-- decreases it by 1
+x++;
+x--;
+console.log(x);
+
+// Comparison operators, output is true if true or false if false
+console.log(ageKobe > ageFebe);
+console.log(ageKobe < ageFebe);
+console.log(ageKobe >= ageFebe);
+console.log(ageKobe <= ageFebe);
