@@ -285,7 +285,6 @@ if(teamDolphins > teamKoalas && teamKoalas > minimumScore){
 // § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
-*/
 
 // The Switch Statement
 const day = "sunday";
@@ -315,3 +314,15 @@ switch(day) {
         console.log("Not a valid day");
         break;
 }
+
+*/
+// The conditional operator (Ternary)
+
+const age = 23;
+// After the ? the "if/else" statement is writen
+age >= 18 ? console.log("I like to drink wine") : console.log("I like to drink water");
+
+const drink = age >= 18 ? console.log("wine") : console.log("water");
+
+// Ternary can be used in a template literal
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
