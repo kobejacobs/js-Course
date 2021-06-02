@@ -164,7 +164,7 @@ if(bmiMark > bmiJohn){
     console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMark})`);
 }
 
-*/
+
 
 // Type conversion and Coercion
 // Type convertion
@@ -186,5 +186,26 @@ console.log(String(23));
 console.log("I am " + 23 + " years old");
 // The minus opperator converts string to numbers, the same goes for the multiplier operator or the deviding operator (< and > also changes strings to numbers)
 console.log("23" - "10" - 3);
+
+*/
+
+// Thruthy and Falsy values
+// Falsy values : 0, "", undefined, null, NaN become false when converted to a boolean
+// Truthy values are all numbers or strings that are not 0 or empty
+
+// The first 2 will be false and the other ones will be true
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+// THe string is true because it is not empty, the same goes for the empty object
+console.log(Boolean("Kobe"));
+console.log(Boolean({}));
+
+// The else statement will be called because a 0 equals to falls according to the boolean converting rule
+const money = 0;
+if(money){
+    console.log("Don't spend it all");
+} else {
+    console.log("You should get a job");
+}
 
 
