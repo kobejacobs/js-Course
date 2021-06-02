@@ -207,7 +207,7 @@ if(money){
     console.log("You should get a job");
 }
 
-*/
+
 
 // Equality Operators
 const age = 18;
@@ -223,4 +223,29 @@ if(age == 18){
 } else {
     console.log("You are to young.")
 }
+*/
+
+// Logical Operators
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+// && is used for the and operator
+console.log(hasDriversLicense && hasGoodVision);
+// || Is used for the or operator
+console.log(hasDriversLicense || hasGoodVision);
+// ! is used for the not operator
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// Check to see if shouldDrive is true or not
+if(shouldDrive){
+    console.log("Kobe is able to drive.")
+} else {
+    console.log("Someone else should drive");
+}
+
+const isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
 
