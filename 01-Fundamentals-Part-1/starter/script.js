@@ -187,7 +187,6 @@ console.log("I am " + 23 + " years old");
 // The minus opperator converts string to numbers, the same goes for the multiplier operator or the deviding operator (< and > also changes strings to numbers)
 console.log("23" - "10" - 3);
 
-*/
 
 // Thruthy and Falsy values
 // Falsy values : 0, "", undefined, null, NaN become false when converted to a boolean
@@ -208,4 +207,20 @@ if(money){
     console.log("You should get a job");
 }
 
+*/
+
+// Equality Operators
+const age = 18;
+// The tripple equal to signs is used to check if both sides are exactly the same, does not perform type coertion but is the default amongst most js programmers
+if(age === 18){
+    console.log("You are old enough.");
+} else {
+    console.log("You are to young.")
+}
+// The double equal sign does perform type coertion
+if(age == 18){
+    console.log("You are old enough.");
+} else {
+    console.log("You are to young.")
+}
 
