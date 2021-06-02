@@ -140,7 +140,7 @@ if(age >= 18){
 } else {
     console.log(`Kobe has to wait ${18 - age} years to start driving`);
 }
-*/
+
 
 // Coding Challenge 2
 // Use the BMI example from Challenge #1, and the code you already wrote, and improve it.
@@ -163,3 +163,27 @@ if(bmiMark > bmiJohn){
 } else {
     console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMark})`);
 }
+
+*/
+
+// Type conversion and Coercion
+// Type convertion
+const inputYear = "1991"
+// This will concatenate 18 tot the string inputYear
+// console.log(inputYear + 18);
+
+// Now we convert the string to a number or integer
+console.log(Number(inputYear) + 18);
+// Trying to covert a string to a number without a number as value, gives error NaN because it isnt a number
+console.log(Number("Jonas"))
+
+// Converting to a string
+console.log(String(23));
+
+
+// Type coertion
+// js will automatically convert the faulty type to the right one, in this case the number to a string
+console.log("I am " + 23 + " years old");
+// The minus opperator converts string to numbers, the same goes for the multiplier operator or the deviding operator
+console.log("23" - "10" - 3);
+
