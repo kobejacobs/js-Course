@@ -251,7 +251,7 @@ console.log(hasDriversLicense || hasGoodVision || isTired);
 // Will output true if all of them are true
 console.log(hasDriversLicense && hasGoodVision && isTired);
 
-*/
+
 
 // Coding Challenge 3
 // There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
@@ -284,3 +284,34 @@ if(teamDolphins > teamKoalas && teamKoalas > minimumScore){
 // Test data:
 // § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+
+*/
+
+// The Switch Statement
+const day = "sunday";
+
+switch(day) {
+    case "monday":
+        console.log("Plan course structure");
+        // Without break the code keeps executing
+        break;
+    case "tuesday":
+        console.log("Prepare theory videos");
+        break;
+    // If the case is either wednesday or thursday the following code will be executed
+    case "wednesday":
+    case "thursday":
+        console.log("Write code examples");
+        break;
+    case "friday":
+        console.log("Make videos");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy weekend!");
+        break;
+    // If there are no matches the default will execute
+    default:
+        console.log("Not a valid day");
+        break;
+}
