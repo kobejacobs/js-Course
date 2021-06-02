@@ -184,6 +184,7 @@ console.log(String(23));
 // Type coertion
 // js will automatically convert the faulty type to the right one, in this case the number to a string
 console.log("I am " + 23 + " years old");
-// The minus opperator converts string to numbers, the same goes for the multiplier operator or the deviding operator
+// The minus opperator converts string to numbers, the same goes for the multiplier operator or the deviding operator (< and > also changes strings to numbers)
 console.log("23" - "10" - 3);
+
 
