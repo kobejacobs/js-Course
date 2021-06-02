@@ -114,8 +114,10 @@ console.log(markHigherBMI);
 // m tall.
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall.
-*/
 
+
+
+// Template Literals
 const firstName = "Kobe";
 const job = "unemployed";
 const birthYear = 2001;
@@ -128,3 +130,14 @@ console.log(kobe)
 // Can also be done using backticks and ${} to insert variables directly (template literals)
 const kobeNew = `I am ${firstName}, a ${(currentYear - birthYear)} years old ${job} young man.`;
 console.log(kobeNew);
+*/
+
+// Taking decisions
+const age = 18;
+// Check if statement is true or false, correspond with the given output
+if(age >= 18){
+    console.log("Kobe can start driving license 🎩");
+}
+else {
+    console.log(`Kobe has to wait ${18 - age} years to start driving`);
+}
