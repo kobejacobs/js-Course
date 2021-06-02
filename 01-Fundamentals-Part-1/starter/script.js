@@ -130,14 +130,36 @@ console.log(kobe)
 // Can also be done using backticks and ${} to insert variables directly (template literals)
 const kobeNew = `I am ${firstName}, a ${(currentYear - birthYear)} years old ${job} young man.`;
 console.log(kobeNew);
-*/
+
 
 // Taking decisions
 const age = 18;
 // Check if statement is true or false, correspond with the given output
 if(age >= 18){
     console.log("Kobe can start driving license 🎩");
-}
-else {
+} else {
     console.log(`Kobe has to wait ${18 - age} years to start driving`);
+}
+*/
+
+// Coding Challenge 2
+// Use the BMI example from Challenge #1, and the code you already wrote, and improve it.
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+const bmiMark = (markMass / (markHeight ** 2));
+const bmiJohn = (johnMass / (johnHeight ** 2));
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+if(bmiMark > bmiJohn){
+    console.log("Mark's BMI is higher than John's!")
+} else {
+    console.log("John's BMI is higher than Mark's!")
+}
+// 2. Use a template literal to include the BMI values in the outputs. Example:"Mark's BMI (28.3) is higher than John's (23.9)!"
+if(bmiMark > bmiJohn){
+    console.log(`Mark's BMI (${bmiMark}) is higher than John's (${bmiJohn})`);
+} else {
+    console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMark})`);
 }
