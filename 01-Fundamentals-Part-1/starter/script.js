@@ -90,7 +90,6 @@ console.log(ageKobe < ageFebe);
 console.log(ageKobe >= ageFebe);
 console.log(ageKobe <= ageFebe);
 
-*/
 
 // Coding challenge 1
 // Mark and John are trying to compare their BMI (Body Mass Index), which is
@@ -115,3 +114,17 @@ console.log(markHigherBMI);
 // m tall.
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall.
+*/
+
+const firstName = "Kobe";
+const job = "unemployed";
+const birthYear = 2001;
+const currentYear = 2037;
+
+// Make new variable to concatenate string together and show it in an ouput
+const kobe = "I am " + firstName + ", a " + (currentYear - birthYear) + " years old " + job + " young man";
+console.log(kobe)
+
+// Can also be done using backticks and ${} to insert variables directly (template literals)
+const kobeNew = `I am ${firstName}, a ${(currentYear - birthYear)} years old ${job} young man.`;
+console.log(kobeNew);
