@@ -14,7 +14,7 @@ if (hasDriversLicense){
 }
 // Tells us about certain reserved words to avoid errors
 // const interface = "audio";
-*/
+
 
 // Functions
 function logger(){
@@ -35,3 +35,21 @@ console.log(applejuice);
 
 const appleOrangeJuice = fruitProcessor(2,4);
 console.log(appleOrangeJuice);
+
+*/
+
+// Function Declaration vs Expressions
+// Function Declaration
+function calcAge(birthYear){
+    return 2037 - birthYear;
+}
+const age1 = calcAge(1991);
+
+// Function Expression
+const calcAge2 = function (birthYear){
+    return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1991);
+console.log(age1,age2);
+
