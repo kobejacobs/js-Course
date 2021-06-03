@@ -327,7 +327,7 @@ const drink = age >= 18 ? console.log("wine") : console.log("water");
 // Ternary can be used in a template literal
 console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
 
-*/
+
 
 
 // Coding Challenge 4
@@ -343,3 +343,5 @@ const totalValue = bill + tipValue;
 console.log(`The bill was ${bill}, the tip was ${tipValue}, and the total value ${totalValue}.`);
 // Test data:
 // § Data 1: Test for bill values 275, 40 and 430
+
+*/
