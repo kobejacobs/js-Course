@@ -112,9 +112,9 @@ const averageKoalas = averageScore(65,54,49);
 // 3. Create a function 'checkWinner' that takes the average score of each team
 // as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)"
 function checkWinner(avgDolpinhs,avgKoalas){
-    if(avgDolpinhs > avgKoalas * 2){
+    if(avgDolpinhs >= avgKoalas * 2){
         return `Dolphins win (${avgDolpinhs} vs. ${avgKoalas})`;
-    } else if (avgDolpinhs * 2 < avgKoalas){
+    } else if (avgDolpinhs * 2 <= avgKoalas){
         return `Koalas win (${avgDolpinhs} vs. ${avgKoalas})`;
     } else{
         return `no one wins`;
