@@ -95,7 +95,7 @@ function fruitProcessor(apples, oranges){
 
 console.log(fruitProcessor(2,3));
 
-*/
+
 
 // Coding Challenge 1
 // Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
@@ -125,3 +125,40 @@ console.log(checkWinner(averageDolphins,averageKoalas));
 // 5. Ignore draws this time
 // Test data:
 // § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49 § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+
+*/
+
+// Introduction to Arrays
+// Literal syntax
+const friends = ["Lukas","JW","Tom"];
+console.log(friends);
+
+const y = new Array(1991,1984,2008,2020);
+// Output the first element in the array
+console.log(friends[0]);
+// Property to check the amount of elements in the array
+// Can be used to output the last element of the array
+console.log(friends.length);
+
+// Change element at index 2
+friends[2] = "Anton";
+console.log(friends);
+
+// An array can also contain variables and contain other arrays
+const kobe = ["Kobe", "Jacobs", 19, "Programmer", friends];
+console.log(kobe);
+
+// Array exercise
+const calcAge2 = function (birthYear){
+    return 2037 - birthYear;
+}
+const years = [1990,1967,2002,2010,2018];
+
+const age1 = calcAge2(years[0]);
+const age2 = calcAge2(years[1]);
+const age3 = calcAge2(years[years.length - 1]);
+console.log(age1,age2,age3);
+
+// Store values in new array
+const agess = [calcAge2(years[0]), calcAge2(years[1]),calcAge2(years[years.length - 1])];
+console.log(agess);
