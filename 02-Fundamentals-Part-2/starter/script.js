@@ -126,7 +126,7 @@ console.log(checkWinner(averageDolphins,averageKoalas));
 // Test data:
 // § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49 § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
 
-*/
+
 
 // Introduction to Arrays
 // Literal syntax
@@ -162,3 +162,45 @@ console.log(age1,age2,age3);
 // Store values in new array
 const agess = [calcAge2(years[0]), calcAge2(years[1]),calcAge2(years[years.length - 1])];
 console.log(agess);
+
+
+*/
+// Basic Array Operators (methods)
+const friends = ["Lukas","JW","Tom"];
+// Add element to array and storing new length in a variable
+const newLength = friends.push("Anton");
+console.log(friends, newLength);
+
+// Add element to the beginning of the array
+friends.unshift("Andy");
+console.log(friends);
+
+// Remove element
+// Remove last element
+friends.pop();
+// Store the popped element in a variable
+const popped = friends.pop();
+console.log(friends);
+// Output popped element
+console.log(popped);
+
+// Remove first element
+friends.shift();
+console.log(friends);
+
+// Show index of chosen element
+console.log(friends.indexOf("Lukas"));
+// Do the same with non existing element (gives error -1)
+console.log(friends.indexOf("Luke"));
+
+// Check if element is in the array
+console.log(friends.includes('Lukas')); // true
+console.log(friends.includes('Luke')); // false
+
+// Use include method to write conditionals
+if (friends.includes("Lukas")){
+    console.log("You have a Friend called Lukas");
+}
+
+
+
