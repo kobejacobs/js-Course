@@ -164,7 +164,7 @@ const agess = [calcAge2(years[0]), calcAge2(years[1]),calcAge2(years[years.lengt
 console.log(agess);
 
 
-*/
+
 // Basic Array Operators (methods)
 const friends = ["Lukas","JW","Tom"];
 // Add element to array and storing new length in a variable
@@ -201,6 +201,34 @@ console.log(friends.includes('Luke')); // false
 if (friends.includes("Lukas")){
     console.log("You have a Friend called Lukas");
 }
+
+*/
+
+// Coding Challenge 2
+// Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+// Your tasks:
+// 1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100
+const bill = 125;
+function calcTip(bill){
+    if (bill > 50 && bill < 300){
+        const tip = (bill / 100) * 15;
+        return tip;
+    } else {
+        const tip = (bill / 100) * 20;
+        return tip;
+    }
+}
+console.log(calcTip(bill));
+// 2. And now let's use arrays! So create an array 'bills' containing the test data below
+const billValues = [125,555,44];
+// 3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
+const tips = [calcTip(billValues[0]), calcTip(billValues[1]), calcTip(billValues[2])];
+console.log(tips);
+// 4. Bonus: Create an array 'total' containing the total values, so the bill + tip
+const total = [(billValues[0] + tips[0]), (billValues[1] + tips[1]), (billValues[2] + tips[2])];
+console.log(total);
+// Test data: 125, 555 and 44
+
 
 
 
