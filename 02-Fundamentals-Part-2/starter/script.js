@@ -220,12 +220,12 @@ function calcTip(bill){
 }
 console.log(calcTip(bill));
 // 2. And now let's use arrays! So create an array 'bills' containing the test data below
-const billValues = [125,555,44];
+const bills = [125,555,44];
 // 3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
-const tips = [calcTip(billValues[0]), calcTip(billValues[1]), calcTip(billValues[2])];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 // 4. Bonus: Create an array 'total' containing the total values, so the bill + tip
-const total = [(billValues[0] + tips[0]), (billValues[1] + tips[1]), (billValues[2] + tips[2])];
+const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 console.log(total);
 // Test data: 125, 555 and 44
 
