@@ -202,7 +202,7 @@ if (friends.includes("Lukas")){
     console.log("You have a Friend called Lukas");
 }
 
-*/
+
 
 // Coding Challenge 2
 // Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
@@ -228,6 +228,17 @@ console.log(tips);
 const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 console.log(total);
 // Test data: 125, 555 and 44
+
+*/
+
+// Intro to Objects
+// Object literal syntax
+const kobe = {
+    // Each variable is a 'Property'
+    firstName: 'Kobe', lastName: 'Jacobs', age: 2021-2001, job: 'programmer', friends: ['Lukas','JW','Anton']
+};
+
+
 
 
 
