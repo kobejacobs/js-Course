@@ -239,6 +239,40 @@ const kobe = {
 };
 
 
+// Dot vs. Bracket notation
+// Dot
+console.log(kobe.lastName);
+
+// Bracket
+console.log(kobe['lastName']);
+
+// use variables to choose a property
+const nameKey = 'Name';
+console.log(kobe['first' + nameKey]);
+console.log(kobe['last' + nameKey]);
+
+// Other bracket example
+// Ask user for input and display the corresponding value of the object
+const interestedIn = prompt('What do you want to know about Kobe? Choose between firstName, lastName, age, job and friends')
+console.log(interestedIn);
+
+
+if(kobe[interestedIn]){
+    console.log(kobe[interestedIn]);
+} else{
+    console.log("Please pick a valid option.");
+}
+
+// Add new properties to the object
+// Using dot notation
+kobe.location = 'Sweden';
+// Using bracket notation
+kobe['twitter'] = '@kobejacobs8';
+console.log(kobe);
+
+// Challenge lecture
+// Output "Kobe has 3 friends, and his best friend is called Lukas"
+console.log(`${kobe.firstName} has ${kobe.friends.length} friends, and his best friend is called ${kobe.friends[0]}.`);
 
 
 
