@@ -355,9 +355,22 @@ if(bmiMark.calcBmi() > bmiJohn.calcBmi()){
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 
 
-*/
+
 
 // Iteration, the For loop
 for(let rep=1; rep <= 10; rep++){
     console.log(`Lifting weights repetition ${rep}`);
+}
+
+
+
+*/
+// Looping Arrays, Breaking and Continuing
+const kobe = [
+    'Kobe', 'Jacobs', 2001, 'programmer', ['Lukas','JW','Anton']
+];
+
+
+for(let i=0; i <= kobe.length - 1; i++){
+    console.log(kobe[i]);
 }
