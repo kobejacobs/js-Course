@@ -314,7 +314,7 @@ if(kobe.hasDriversLicense){
 
 
 
-*/
+
 // Coding Challenge 3
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
 // Your tasks:
@@ -353,3 +353,11 @@ if(bmiMark.calcBmi() > bmiJohn.calcBmi()){
     console.log(`${bmiMark.firstName} has the same BMI as ${bmiJohn.firstName}`);
 }
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+
+*/
+
+// Iteration, the For loop
+for(let rep=1; rep <= 10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
