@@ -229,7 +229,7 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(total);
 // Test data: 125, 555 and 44
 
-*/
+
 
 // Intro to Objects
 // Object literal syntax
@@ -276,4 +276,38 @@ console.log(`${kobe.firstName} has ${kobe.friends.length} friends, and his best 
 
 
 
+*/
+// Object Methods
+const kobe = {
+    // Each variable is a 'Property'
+    firstName: 'Kobe', lastName: 'Jacobs', birthYear: 2001, job: 'programmer', friends: ['Lukas','JW','Anton'], hasDriversLicense: true, 
+    // Use function in objects
+    // calcAge: function(birthYear){
+    //     return 2021 - birthYear;
+    // }
+    // Using properties directly
+    // The this keyword points to the 'kobe' object
+    calcAge: function(){
+        // this.birthYear = kobe.birthYear
+        this.age = 2021 - this.birthYear;
+        return this.age;
+    }
+};
+// // Using dot
+// console.log(kobe.calcAge(2001));
+// // Using bracket
+// console.log(kobe['calcAge'](2001));
+// // Using property and bracket
+// console.log(kobe['calcAge'](kobe.birthYear));
 
+console.log(kobe.calcAge());
+// Used variable to calculate the age once and store the value in a property
+console.log(kobe.age);
+
+// Challenge lecture
+// Output 'Kobe is a 20 years old programmer. And he has no drivers license'
+if(kobe.hasDriversLicense){
+    console.log(`${kobe.firstName} is a ${kobe.calcAge()} year old ${kobe.job}. And he has a drivers license`);
+} else {
+    console.log(`${kobe.firstName} is a ${kobe.calcAge()} year old ${kobe.job}. And he has no drivers license`);
+}
