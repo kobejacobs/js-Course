@@ -276,7 +276,7 @@ console.log(`${kobe.firstName} has ${kobe.friends.length} friends, and his best 
 
 
 
-*/
+
 // Object Methods
 const kobe = {
     // Each variable is a 'Property'
@@ -311,3 +311,45 @@ if(kobe.hasDriversLicense){
 } else {
     console.log(`${kobe.firstName} is a ${kobe.calcAge()} year old ${kobe.job}. And he has no drivers license`);
 }
+
+
+
+*/
+// Coding Challenge 3
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+// Your tasks:
+// 1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+// const bmiMark = {
+//     firstName: 'Mark', lastName: "Miller", mass: 78, height: 169
+// }
+// console.log(bmiMark);
+// const bmiJohn = {
+//     firstName: 'John', lastName: "Smith", mass: 92, height: 195
+// }
+// console.log(bmiJohn);
+// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+const bmiMark = {
+        firstName: 'Mark', lastName: "Miller", mass: 78, height: 1.69,
+        calcBmi: function(){
+            const bmi = this.mass / this.height ** 2;
+            return bmi;
+        }
+    }
+    console.log(bmiMark);
+const bmiJohn = {
+        firstName: 'John', lastName: "Smith", mass: 92, height: 1.95,
+        calcBmi: function(){
+            const bmi = this.mass / this.height ** 2;
+            return bmi;
+        }
+    }
+    console.log(bmiJohn);
+// 3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+if(bmiMark.calcBmi() > bmiJohn.calcBmi()){
+    console.log(`${bmiMark.firstName}'s BMI (${bmiMark.calcBmi()}) is higher than ${bmiJohn.firstName}'s BMI (${bmiJohn.calcBmi()})`);
+} else if(bmiMark.calcBmi() < bmiJohn.calcBmi()){
+    console.log(`${bmiJohn.firstName}'s BMI (${bmiJohn.calcBmi()}) is higher than ${bmiMark.firstName}'s BMI (${bmiMark.calcBmi()})`);
+} else {
+    console.log(`${bmiMark.firstName} has the same BMI as ${bmiJohn.firstName}`);
+}
+// Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
